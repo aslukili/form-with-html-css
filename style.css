@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  text-align: -webkit-center;
+}
+
+@font-face {
+  font-family: welcome;
+  src: url(fonts/FREESCPT.TTF);
+}
+
+@font-face {
+  font-family: intro;
+  src: url(fonts/ComicSansMS3.ttf);
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 30%;
+  max-width: 100px;
+}
+
+#welcome {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: welcome, arial;
+  font-size: 57px;
+}
+
+.intro {
+  display: inline-flex;
+  max-width: 420px;
+  font-family: intro, arial;
+  font-size: 23px;
+  margin-top: 0px;
+}
+
+.form {
+  background-color: rgb(255, 222, 163, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  color: #442903;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  max-width: 600px;
+}
+
+.form p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.form label {
+  font-size: 23px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form input {
+  font-family: "Times New Roman", Times, serif;
+  color: #e5890a;
+  font-size: 1.3em;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.form input::placeholder {
+  color: #e5890a;
+  font-size: 1.1em;
+  padding: 3px;
+}
+
+.form select {
+  color: #e5890a;
+  font-size: 1.1em;
+  padding: 3px;
+}
+.form input[type="button"] {
+  background-color: #9d5c0d;
+  border-radius: 10px;
+  width: 50%;
+  height: 50px;
+  margin-top: 1em;
+  color: white;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+}
+.form input {
+  border: 3px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  height: 35px;
+}
+.form:hover {
+  box-shadow: 5px 5px 8px rgb(199, 163, 1);
+}
+
+input:focus {
+  border: 3px solid #555;
+}
+
+#city {
+  width: 90%;
+}
+#rooms {
+  width: 90%;
+  display: inline-flex;
+  margin-top: 1em;
+}
+#rooms input {
+  flex: 2;
+  margin-left: 37px;
+  min-width: 30px;
+}
+
+#property {
+  width: 90%;
+  display: inline-flex;
+  margin-top: 1em;
+}
+
+#property select {
+  flex: 2;
+  border: 3px solid rgb(177, 177, 177);
+  border-radius: 4px;
+  height: 35px;
+  margin-left: 15px;
+}
+
+#price-range {
+  width: 90%;
+  display: inline-flex;
+  margin-top: 1em;
+}
+#price-range input {
+  min-width: 15px;
+  flex: 2;
+  margin-left: 15px;
+}
+#sold-property {
+  width: 90%;
+  display: inline-flex;
+  padding-top: 15px;
+}
+
+#sold-property input {
+  flex: 2;
+  max-width: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    width: 45%;
+    float: left;
+  }
+
+  .header #welcome {
+    margin-top: 20%;
+  }
+  .header .intro {
+    margin-top: 10%;
+  }
+  .form {
+    width: 45%;
+    float: right;
+    max-width: none;
+  }
+}
