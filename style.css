@@ -8,7 +8,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-attachment: local;
   text-align: -webkit-center;
 }
 
@@ -23,10 +22,6 @@ body {
 }
 
 .header {
-  text-align: center;
-}
-
-.logo {
   text-align: center;
 }
 
@@ -78,10 +73,13 @@ body {
 
 .form input {
   font-family: "Times New Roman", Times, serif;
-  color: #e5890a;
+  color: #5a3400;
   font-size: 1.3em;
   padding: 3px;
   border-radius: 10px;
+  border: 3px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  height: 35px;
 }
 
 .form input::placeholder {
@@ -91,11 +89,11 @@ body {
 }
 
 .form select {
-  color: #e5890a;
+  color: #5a3400;
   font-size: 1.1em;
   padding: 3px;
 }
-.form input[type="button"] {
+.form input[type="submit"] {
   background-color: #9d5c0d;
   border-radius: 10px;
   width: 50%;
@@ -105,11 +103,7 @@ body {
   margin-bottom: 1.5em;
   font-size: 1.8em;
 }
-.form input {
-  border: 3px solid rgb(177, 177, 177);
-  border-radius: 5px;
-  height: 35px;
-}
+
 .form:hover {
   box-shadow: 5px 5px 8px rgb(199, 163, 1);
 }
@@ -120,6 +114,13 @@ input:focus {
 
 #city {
   width: 90%;
+  display: inline-flex;
+  margin-top: 1em;
+}
+#city input {
+  flex: 1;
+  margin-left: 60px;
+  min-width: 30px;
 }
 #rooms {
   width: 90%;
@@ -127,7 +128,7 @@ input:focus {
   margin-top: 1em;
 }
 #rooms input {
-  flex: 2;
+  flex: 1;
   margin-left: 37px;
   min-width: 30px;
 }
@@ -139,7 +140,7 @@ input:focus {
 }
 
 #property select {
-  flex: 2;
+  flex: 1;
   border: 3px solid rgb(177, 177, 177);
   border-radius: 4px;
   height: 35px;

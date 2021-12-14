@@ -18,18 +18,20 @@
       </p>
     </header>
     <main>
-      <form class="form">
+      <form class="form" action="https://google.com">
         <p>Find the perfect home for you</p>
-        <label for="city"></label>
-        <input id="city" type="text" placeholder="city" required />
+        <div id="city">
+          <label for="city">city:</label>
+          <input name="city" type="text" placeholder="city" required />
+        </div>
         <br />
         <div id="rooms">
-          <label for="rooms">rooms</label>
-          <input type="number" value="2" />
+          <label for="rooms">rooms:</label>
+          <input name="rooms" type="number" value="2" />
         </div>
         <br />
         <div id="property">
-          <label for="property">Property</label>
+          <label for="property">Property:</label>
           <select name="Property">
             <option value="Residential">Residential</option>
             <option value="Commercial">Commercial</option>
@@ -38,17 +40,17 @@
         </div>
         <br />
         <div id="price-range">
-          <label for="price-range">Price range</label><br />
-          <input type="number" placeholder="min" required />
-          <input type="number" placeholder="max" required />
+          <label for="price-range">Price range:</label><br />
+          <input name="price-range" type="number" placeholder="min" required />
+          <input name="price-range" type="number" placeholder="max" required />
         </div>
         <br />
         <div id="sold-property">
-          <input type="checkbox" id="sold-property" />
+          <input name="sold-property" type="checkbox" />
           <label for="sold-property">include sold property</label>
         </div>
         <br />
-        <input type="button" value="search" />
+        <input type="submit" value="search" />
       </form>
     </main>
   </body>
